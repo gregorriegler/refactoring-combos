@@ -9,6 +9,10 @@ import java.util.List;
 public class Start {
 
     public static void main(String[] args) {
+        new Start().start();
+    }
+
+    private void start() {
         List<OrderLine> lines = new ArrayList<>();
         lines.add(new OrderLine("computer", 999));
         lines.add(new OrderLine("table", 400));
@@ -18,5 +22,4 @@ public class Start {
             .sum();
         System.out.println("the total amount is " + total);
     }
-
 }
